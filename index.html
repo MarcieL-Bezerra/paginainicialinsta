@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<title>InstaFaceWhats</title>
+</head>
+<body>
+	<script type="text/javascript">
+        function mensagem(escolha,paginaesc,mudarlogo)
+        { 
+        	document.getElementById("txtrect").innerHTML=escolha;
+        	document.getElementById("txtrect").href=paginaesc;
+        	document.getElementById("logomuda").src=mudarlogo;
+        
+        }
+    </script>
+    <div class="instagram-wrapper">
+        <div class="instagram-phone">
+            <img src="./img/instagram-celular2.png" alt="celular">
+        </div>
+        <div class="instagram-continue">
+            <div class="group">
+                <img id=logomuda src="./img/instagram-logo.png" class="instagram-logo" alt="instagram logo">
+                <div class="profile-photo">
+                    <img src="./img/insta.png" alt="logo Instagram" onClick="mensagem('Continue no Instagram',
+                    'instagram.com','./img/instagram-logo.png')" style= "cursor: pointer">
+                    <img src="./img/face.png" alt="logo Facebook"  onClick="mensagem('Vá para o FaceBook',
+                    'https://www.facebook.com','./img/facebook-logo.png')" style="cursor: pointer">
+                    <img src="./img/whats.png" alt="logo WhatsApp" onClick="mensagem('Vá para o WhatsApp','https://web.whatsapp.com',
+                    './img/whatsapp-logo.png')" style="cursor: pointer">
+                </div>
+                <a href="#" id =txtrect class="instagram-login">Continue no Instagram</a>
+                <a href="#" class="instagram-logout">Remover conta</a>
+
+            </div>
+
+            <div class="group">
+                <p class="not-account">Prefere o 
+                <a href="https://www.facebook.com" class="link-blue " style= "cursor: pointer" > Facebook  </a >  ou 
+            	<a href="https://web.whatsapp.com" class="link-blue " style= "cursor: pointer" >WhatsApp</a></p>
+                <p class="not-account">
+                    <a href="#" class="link-blue " style= "cursor: pointer" >Alternar contas</a>
+                    ou
+                    <a href="#" class="link-blue " style= "cursor: pointer" >Inscreva-se</a>
+                </p>
+            </div>
+            <div class="get-the-app">
+                <p class="get-app">Baixe o aplicativo</p>
+                <div class="download">
+                    <a href="#" class="app-download"></a>
+                    <a href="#" class="app-download"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
